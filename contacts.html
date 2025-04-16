@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment | Nonkululeko</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="contact-page">
+    <header>
+      <nav>
+        <h1>Nonkululeko Ngwenya</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="button">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+          <label for="clientName">Name:</label>
+          <input type="text" id="clientName" required />
+
+          <label for="clientEmail">Email:</label>
+          <input type="email" id="clientEmail" required />
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Submit</button>
+          <p id="formMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Nonkululeko Ngwenya</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
