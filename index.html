@@ -3,38 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nonkululeko Ngwenya| Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>My weather application</title>
   </head>
-  <body class="homepage">
-    <header>
-      <nav>
-        <h1>Nonkululeko Ngwenya</h1>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contacts.html" class="button">Book Appointment</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="overlay">
-          <h2>Hello, I'm Nonkululeko Ngwenya</h2>
-          <p>
-            Freelance Front-end developer based in Gauteng, South Africa. I'm a
-            skilled developer with a passion for building innovative digital
-            solutions. With 2 years of experience in HTML, CSS, and JS. I help
-            businesses and individuals bring their ideas to life. Let's work
-            together to create something amazing.
-          </p>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div id="current-temperature">
+            <span id="current-temperature-icon">☀️</span
+            ><span id="current-temperature-value">24</span
+            ><span id="current-temperature-unit">°C</span>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>Coded by Nonkululeko Ngwenya</p>
-    </footer>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Nonku29" target="_blank"
+            >Nonkululeko Mehlomakulu</a
+          >
+          and is
+          <a href="https://github.com/Nonku29/Weather-App" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://majestic-kulfi-0f3c1c.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>
